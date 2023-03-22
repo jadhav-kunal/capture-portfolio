@@ -75,14 +75,15 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
-
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0rem;
   }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
-
   .line {
     height: 0.5rem;
     background: #23d997;
