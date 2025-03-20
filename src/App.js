@@ -1,16 +1,17 @@
-import React from "react";
+import React from 'react';
 //Global Style
-import GlobalStyle from "./components/GlobalStyle";
+import GlobalStyle from './components/GlobalStyle';
 //Import Pages
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import OurWork from "./pages/OurWork";
-import Nav from "./components/Nav";
-import MovieDetail from "./pages/MovieDetail";
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import OurWork from './pages/OurWork';
+import Gallery from './pages/Gallery';
+import Nav from './components/Nav';
+import MovieDetail from './pages/MovieDetail';
 //Router
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation } from 'react-router-dom';
 //Animation
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/work/:id">
             <MovieDetail />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
           </Route>
           <Route path="/contact">
             <ContactUs />

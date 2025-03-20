@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 //Import Icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import clock from '../img/clock.svg';
+import diaphragm from '../img/diaphragm.svg';
+import money from '../img/money.svg';
+import teamwork from '../img/teamwork.svg';
+import home2 from '../img/home2.png';
 //Styles
-import { About, Description, Image } from "../styles";
-import styled from "styled-components";
-import { scrollReveal } from "../animation";
-import { useScroll } from "./useScroll";
+import { About, Description, Image } from '../styles';
+import styled from 'styled-components';
+import { scrollReveal } from '../animation';
+import { useScroll } from './useScroll';
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -30,28 +30,28 @@ const ServicesSection = () => {
               <img alt="icon" src={clock} />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Quick and reliable delivery.</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={teamwork} />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Collaboration drives success.</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={diaphragm} />
               <h3>Diaphragm</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Precision in every shot.</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={money} />
               <h3>Affordable</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Quality at the best price.</p>
           </Card>
         </Cards>
       </Description>

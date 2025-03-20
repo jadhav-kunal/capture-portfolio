@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { About } from "../styles";
-import Toggle from "./Toggle";
-import { AnimateSharedLayout } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import React from 'react';
+import styled from 'styled-components';
+import { About } from '../styles';
+import Toggle from './Toggle';
+import { AnimateSharedLayout } from 'framer-motion';
+import { useScroll } from './useScroll';
+import { scrollReveal } from '../animation';
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
@@ -21,38 +21,38 @@ const FaqSection = () => {
       <AnimateSharedLayout>
         <Toggle title="How Do I Start?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Getting started is easy and quick.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-              autem accusamus ex laboriosam porro, adipisci quam voluptatum
-              magnam placeat corporis.
+              Simply reach out to us, share your requirements, and our team will
+              guide you through the process to ensure a smooth experience.
             </p>
           </div>
         </Toggle>
         <Toggle title="Daily Schedule">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>We work with a structured plan.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-              totam.
+              Our team follows a well-organized schedule to ensure timely
+              deliveries and seamless communication throughout the project.
             </p>
           </div>
         </Toggle>
         <Toggle title="Diferrent Payment Methods">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Flexible payment options available.</p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, neque.
+              We accept UPI, Credit Cards, PayPal, Bank Transfers, and more to
+              make transactions smooth and hassle-free for you.
             </p>
           </div>
         </Toggle>
-        <Toggle title="What Products do you offer.">
+        <Toggle title="What Products do you offer?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>We provide high-quality services and products.</p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, neque.
+              Our offerings include professional photography, videography,
+              editing services, and customized content solutions tailored to
+              your needs.
             </p>
           </div>
         </Toggle>
